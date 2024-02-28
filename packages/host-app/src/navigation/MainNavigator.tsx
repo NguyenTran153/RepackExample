@@ -9,12 +9,14 @@ import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
 import MiniAppScreen from '../screens/MiniAppScreen';
 import BookingAppScreen from '../screens/BookingScreen';
+import TestAppScreen from '../screens/TestAppScreen';
 
 export type MainStackParamList = {
   Home: undefined;
   Detail: undefined;
   MiniApp: undefined;
   BookingApp: undefined;
+  TestApp: undefined;
 };
 
 export type MainStackNavigationProp =
@@ -36,6 +38,7 @@ const MainNavigator = () => {
       <Main.Screen name="Detail" component={DetailScreen} />
       <Main.Screen name="MiniApp" component={MiniAppScreen} />
       <Main.Screen name="BookingApp" component={BookingAppScreen} />
+      <Main.Screen name="TestApp" component={TestAppScreen} />
     </Main.Navigator>
   );
 };

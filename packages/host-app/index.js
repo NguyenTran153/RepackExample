@@ -8,6 +8,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
     containers: {
       MiniApp: 'http://localhost:9000/[name][ext]',
       BookingApp: 'http://localhost:9001/[name][ext]',
+      TestApp: 'http://localhost:9901/[name][ext]',
     },
   });
 
@@ -32,6 +33,7 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
     containers: {
       MiniApp: 'http://localhost:9000/[name][ext]',
       BookingApp: 'http://localhost:9001/[name][ext]',
+      TestApp: 'http://localhost:9901/[name][ext]',
     },
   });
 
@@ -54,4 +56,8 @@ ScriptManager.shared.addResolver(async (scriptId, caller) => {
   };
 });
 
-AppRegistry.registerComponent(appName, () => App);
+export function Root() {
+  return <App />;
+}
+
+AppRegistry.registerComponent(appName, () => Root);

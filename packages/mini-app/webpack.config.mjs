@@ -76,8 +76,7 @@ export default env => {
      */
     entry: [
       ...Repack.getInitializationEntries(reactNativePath, {
-        // hmr: devServer && devServer.hmr,
-        hmr: false,
+        hmr: devServer && devServer.hmr,
       }),
       entry,
     ],

@@ -8,10 +8,10 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>MiniApp HomeScreen</Text>
+      <Text style={styles.label}>Mini HomeScreen</Text>
       <Button
         color="rgba(127, 103, 190, 1)"
-        title="Navigate to MiniApp GalleryScreen"
+        title="Navigate to MiniApp GallerySen!"
         onPress={() => {
           navigation.navigate('Gallery');
         }}

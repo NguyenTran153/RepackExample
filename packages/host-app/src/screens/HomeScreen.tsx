@@ -30,6 +30,13 @@ const HomeScreen = () => {
           navigation.navigate('BookingApp');
         }}
       />
+      <Button
+        color="rgba(127, 103, 190, 1)"
+        title="Navigate to TestApp"
+        onPress={() => {
+          navigation.navigate('TestApp');
+        }}
+      />
     </View>
   );
 };
